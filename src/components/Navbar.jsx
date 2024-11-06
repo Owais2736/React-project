@@ -7,7 +7,7 @@ function Navbar() {
     return (
         <>
 
-            <div className='flex justify-between w-screen sticky top-0 h-[80px] items-center p-10 '>
+            <div className='flex justify-between w-screen z-10 sticky top-0 h-[80px] items-center p-10 '>
 
 
 
