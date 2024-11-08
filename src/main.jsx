@@ -28,12 +28,12 @@ import AppContent from './pages/AppContent/AppContent.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <><Navbar /><LeftNavbar /></>
+    element: <><Navbar /><App/></>
   },
 
   {
     path: "/booking",
-    element: <><Navbar /><LeftNavbar /><Booking /></>
+    element: <><Navbar /><Booking /></>
   },
   {
     path: "/team",
@@ -64,7 +64,7 @@ const router = createBrowserRouter([
 
   {
     path: "/review",
-    element: <><Navbar /><LeftNavbar />< Reviews /></>
+    element: <><Navbar />< Reviews /></>
   },
   {
     path: "/faqs",
