@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 function LeftNavbar() {
   return (
     <>
-      <div className='w-[50%] mt-7 max-h-[430px] overflow-y-scroll font-semibold'>
+      <div className=' mt-7 max-h-[430px] overflow-y-scroll overflow-x-hidden font-semibold'>
         <ul>
             
           <NavLink to="/" >

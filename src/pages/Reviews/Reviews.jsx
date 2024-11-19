@@ -1,56 +1,156 @@
 import React from 'react'
+import { useState } from 'react';
+import { Button, message, Modal } from 'antd';
 import LeftNavbar from '../../components/LeftNavbar'
 import reviews from "../../Json/reviews.json"
+import Button1 from '../../components/Button1.jsx';
+
+import { useForm } from "react-hook-form"
+
 
 
 function Reviews() {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSecModalOpen, setIsSecModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsSecModalOpen(true);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+
+
+  const handleSecOk = () => {
+    setIsSecModalOpen(false);
+    setIsModalOpen(false);
+  };
+  const handleSecCancel = () => {
+    setIsSecModalOpen(false);
+  };
+
+
+  const {
+    register,
+    handleSubmit,
+  setError,
+    watch,
+    formState: { errors,   isSubmitting  },
+  } = useForm()
+
+
+  const onSubmit=async (data) => {
+    console.log(data)
+  
+  }
   return (
     <>
-      <div className="w-full flex ">
+      <section className='top'>
+        <div className='flex justify-between'>
 
-        <div className="w-[40%]">
+          <div className='font-bold text-[14px] ml-72 mt-4 '>Reviews</div>
 
-          <LeftNavbar />
-
-        </div>
-
-
-
-        <div className="flex p-7 flex-wrap w-[77%] ml-[-250px] bg-gray-100">
-
-
-          {reviews.map(review => {
-            return (
-              <div className='w-1/3 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
-
-                <div className='flex gap-3 items-center '>
-                  <div className='w-[100px] h-[100px]'>
-                    <img className='w-full h-full' src={review.src} alt="" />
-                  </div>
-
-                  <div className='font-semibold'>
-                    <h2 className=''>{review.name}</h2>
-                    <p >{review.occupation}</p>
-                  </div>
-
-                </div>
-
-                <div>
-                  <p className='text-[12px]'>{review.description}</p>
-                </div>
-
-
-              </div>
-            )
-          })
-          }
-
-
+          <div>
+            <Button1 title={"Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" color="blue" fill="none">
+    <path d="M12 8V16M16 12L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M2.5 8.5C2.86239 7.67056 3.3189 6.89166 3.85601 6.17677M6.17681 3.85598C6.89168 3.31888 7.67058 2.86239 8.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+</svg>} />
+          </div>
 
         </div>
+      </section>
 
-      </div>
+      <section className='main'>
 
+        <div className="w-full  flex gap-[270px] ">
+
+          <div className='w-[20%]'>
+            <div className='w-[20%] fixed mt-[-45px]'>
+              <LeftNavbar />
+            </div>
+
+          </div>
+
+          <div className="flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100">
+            {reviews.map(review => {
+              return (
+                <div className='w-80 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
+                  <div onClick={showModal} className='ml-64 mt-1 bg-gray-100 rounded-md h-6 w-7 cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
+                    <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg></div>
+
+                  <Modal className='' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                    <center>
+                      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="red" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M11.992 15H12.001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 12L12 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg></p>
+                      <br />
+                      <p className='font-bold text-[30px]'>Are you sure?</p>
+
+                      <p className='text-[16px] leading-9'>Are you sure that you want to delete?</p>
+                    </center>
+                  </Modal>
+
+                  <Modal className='' open={isSecModalOpen} onOk={handleSecOk} onCancel={handleSecCancel}>
+                    <center>
+                      <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="green" fill="none">
+                        <path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg></p>
+                      <br />
+                      <p className='font-bold text-[30px]'>Successfully Delete</p>
+                    </center>
+                  </Modal>
+
+                  <div className='flex gap-3 items-center mt-[-30px] '>
+                    <div className='w-[100px] h-[100px]'>
+                      <img className='w-full h-full' src={review.src} alt="" />
+                    </div>
+
+                    <div className='font-semibold'>
+                      <h2 className=''>{review.name}</h2>
+                      <p >{review.occupation}</p>
+                    </div>
+
+                  </div>
+
+                  <div>
+                    <p className='text-[12px]'>{review.description}</p>
+                  </div>
+                </div>
+              )
+            })
+            }
+          </div>
+        </div>
+      </section>
+
+<br /><br />
+
+      <form onSubmit={handleSubmit(onSubmit)} action=''>
+
+         
+      <input type="text" placeholder='Enter Name' {...register("username", {required:{value:true , message:"This is required Field"} , minLength:{value: 3, message:"Min length is 3"}, maxLength:{value: 20, message:"Max length is 20"}})} />
+{errors.username && <span>{errors.username.message}</span>}
+
+<input type='text' placeholder='Enter Occupation' {...register("userOccupation", { required:{value:true , message:"This is required field"} , minLength:{value:5, message:"Min length is 5"} })} />
+{errors.userOccupation && <span>{errors.userOccupation.message}</span>}
+
+
+<input disabled={isSubmitting} type="submit" value="submit" />
+{errors.forms && <span>{errors.forms.message}</span>}
+
+
+
+      </form>
+<br /><br />
     </>
   )
 }
