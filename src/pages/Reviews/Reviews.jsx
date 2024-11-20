@@ -4,15 +4,25 @@ import { Button, message, Modal } from 'antd';
 import LeftNavbar from '../../components/LeftNavbar'
 import reviews from "../../Json/reviews.json"
 import Button1 from '../../components/Button1.jsx';
-
 import { useForm } from "react-hook-form"
-
 
 
 function Reviews() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSecModalOpen, setIsSecModalOpen] = useState(false);
+  const [toogle, setToogle] = useState(false)
+  const [addToogle, setAddToogle] = useState(true)
+
+
+  const handleBtn = () => {
+    setToogle(!toogle)
+  }
+
+  const handleAdd = () => {
+    setAddToogle(!addToogle)
+    console.log(addToogle);
+  }
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -23,8 +33,6 @@ function Reviews() {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
-
 
   const handleSecOk = () => {
     setIsSecModalOpen(false);
@@ -38,29 +46,57 @@ function Reviews() {
   const {
     register,
     handleSubmit,
-  setError,
+    setError,
     watch,
-    formState: { errors,   isSubmitting  },
+    formState: { errors, isSubmitting },
   } = useForm()
 
 
-  const onSubmit=async (data) => {
+  const onSubmit = async (data) => {
     console.log(data)
-  
+
   }
   return (
     <>
       <section className='top'>
         <div className='flex justify-between'>
 
-          <div className='font-bold text-[14px] ml-72 mt-4 '>Reviews</div>
+          <div className={`font-bold text-[14px] ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
 
-          <div>
-            <Button1 title={"Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" color="blue" fill="none">
-    <path d="M12 8V16M16 12L8 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-    <path d="M2.5 8.5C2.86239 7.67056 3.3189 6.89166 3.85601 6.17677M6.17681 3.85598C6.89168 3.31888 7.67058 2.86239 8.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-</svg>} />
+          <div className={` mt-4`}>
+
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Reviews</div>
+
+          </div>
+
+          <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}   `}>
+            <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
+              toogle || (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none">
+                  <path
+                    d="M12 8V16M16 12L8 12"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M2.5 8.5C2.86239 7.67056 3.3189 6.89166 3.85601 6.17677M6.17681 3.85598C6.89168 3.31888 7.67058 2.86239 8.5 2.5"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              )
+            } />
           </div>
 
         </div>
@@ -77,7 +113,7 @@ function Reviews() {
 
           </div>
 
-          <div className="flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100">
+          <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100 ${!addToogle ? "hidden" : ""} ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
               return (
                 <div className='w-80 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
@@ -129,28 +165,33 @@ function Reviews() {
             })
             }
           </div>
+
+          <div className={`w-[75%] ml-[-230px] mt-4 flex gap-4 rounded-xl bg-gray-200 p-11 ${!addToogle ? "hidden" : ""} ${!toogle ? "hidden" : ""} `}>
+            <div className='w-24 cursor-pointer border-2 h-20 rounded-xl'>
+              <img className='rounded-xl' src="src/images/Reviews/profile.jpg" alt="" srcset="" />
+              <input className='w-24 rounded-lg' type="file" />
+            </div>
+
+            <div className='w-[70%]'>
+              <form onSubmit={handleSubmit(onSubmit)} action=''>
+                <input className='w-[120%] rounded-xl h-8 text-[14px] pl-2 border-2' type="text" placeholder='Enter Name' {...register("username", { required: { value: true, message: "This is required Field" }, minLength: { value: 3, message: "Min length is 3" }, maxLength: { value: 20, message: "Max length is 20" } })} />
+                {errors.username && <span>{errors.username.message}</span>}
+                <br />
+                <input className='w-[120%] rounded-xl h-8 mt-2 text-[14px] pl-2 border-2' type='text' placeholder='Enter Occupation' {...register("userOccupation", { required: { value: true, message: "This is required field" }, minLength: { value: 5, message: "Min length is 5" } })} />
+                {errors.userOccupation && <span>{errors.userOccupation.message}</span>}
+
+                <br />
+
+                <input className='w-[120%] rounded-xl min-h-32  mt-2 text-[14px] pl-2 border-2 ' type='text' placeholder='Enter Reviews' {...register("userReview", { required: { value: true, message: "This is required field" }, minLength: { value: 5, message: "Min length is 5" } })} />
+                {errors.userReview && <span>{errors.userReview.message}</span>}
+                <br />
+                <input className='w-[140px] h-8 mt-2 bg-blue-700 text-[white] font-semibold text-[14px] cursor-pointer rounded-xl' disabled={isSubmitting} type="submit" value="ADD" />
+                {errors.forms && <span>{errors.forms.message}</span>}
+              </form>
+            </div>
+          </div>
         </div>
       </section>
-
-<br /><br />
-
-      <form onSubmit={handleSubmit(onSubmit)} action=''>
-
-         
-      <input type="text" placeholder='Enter Name' {...register("username", {required:{value:true , message:"This is required Field"} , minLength:{value: 3, message:"Min length is 3"}, maxLength:{value: 20, message:"Max length is 20"}})} />
-{errors.username && <span>{errors.username.message}</span>}
-
-<input type='text' placeholder='Enter Occupation' {...register("userOccupation", { required:{value:true , message:"This is required field"} , minLength:{value:5, message:"Min length is 5"} })} />
-{errors.userOccupation && <span>{errors.userOccupation.message}</span>}
-
-
-<input disabled={isSubmitting} type="submit" value="submit" />
-{errors.forms && <span>{errors.forms.message}</span>}
-
-
-
-      </form>
-<br /><br />
     </>
   )
 }
