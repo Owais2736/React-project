@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Button({title,background,width, height, round , text,color , svg , onClick,tooglee}) {
+function Button({title,background,width, height, round , text,color , svg , onClick,tooglee, input}) {
 
 
 
@@ -16,6 +16,7 @@ function Button({title,background,width, height, round , text,color , svg , onCl
           <div>
           {title}
           </div>
+          <div>{input}</div>
           <div>
           {tooglee}
           </div>

@@ -1,35 +1,28 @@
 import React from "react"
 import LeftNavbar from "./components/LeftNavbar"
-
+import DashboardCard from "./components/DashboardCard"
 
 function App() {
   
-
   return (
     <>
-<div className="w-full flex ">
 
-  <div className="w-full">
-    <LeftNavbar/>
+      <div className="font-bold text-[14px] ml-[22vw]">Bookings</div>
+      <section className="main1">
+        <div className="w-full  flex gap-[300px] ">
 
-  </div>
+          <div className='w-[20%]'>
+            <div className='w-[20%] fixed mt-[-45px]'>
+              <LeftNavbar />
+            </div>
 
+          </div>
 
-
-<div className="flex gap-3">
-
-
-<div className="w-1/4 h-[300px] bg-gray-100">
-jjs
-</div>
-
-  
-</div>
-
-</div>
-
-
-
+          <div className="">
+            <DashboardCard/>
+        </div>
+        </div>
+      </section>
     </>
   )
 }

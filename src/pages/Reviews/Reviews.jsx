@@ -12,16 +12,9 @@ function Reviews() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSecModalOpen, setIsSecModalOpen] = useState(false);
   const [toogle, setToogle] = useState(false)
-  const [addToogle, setAddToogle] = useState(true)
-
 
   const handleBtn = () => {
     setToogle(!toogle)
-  }
-
-  const handleAdd = () => {
-    setAddToogle(!addToogle)
-    console.log(addToogle);
   }
 
   const showModal = () => {
@@ -113,7 +106,7 @@ function Reviews() {
 
           </div>
 
-          <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100 ${!addToogle ? "hidden" : ""} ${!toogle ? "" : "hidden"} `}>
+          <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
               return (
                 <div className='w-80 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
@@ -166,7 +159,7 @@ function Reviews() {
             }
           </div>
 
-          <div className={`w-[75%] ml-[-230px] mt-4 flex gap-4 rounded-xl bg-gray-200 p-11 ${!addToogle ? "hidden" : ""} ${!toogle ? "hidden" : ""} `}>
+          <div className={`w-[75%] ml-[-230px] mt-4 flex gap-4 rounded-xl bg-gray-200 p-11  ${!toogle ? "hidden" : ""} `}>
             <div className='w-24 cursor-pointer border-2 h-20 rounded-xl'>
               <img className='rounded-xl' src="src/images/Reviews/profile.jpg" alt="" srcset="" />
               <input className='w-24 rounded-lg' type="file" />
