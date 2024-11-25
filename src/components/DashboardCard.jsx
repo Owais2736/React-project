@@ -30,12 +30,17 @@ function DashboardCard() {
       {dashboard.map(data => {
               return (
 
-                <div key={data.name} onClick={showModal} className="card1 p-5 w-[350px] rounded-xl flex flex-col gap-1 bg-gray-100 ">
+            
+                <div  key={data.name} className="card1 p-5 w-[350px] rounded-xl flex flex-col gap-1 bg-gray-100 "  >
+                  
+                  
+                   
+               
                   <Modal
 
                     open={isModalOpen}
                     footer={null}
-                    onClick={handleCancelled}
+                    onCancel={handleCancelled}
 
                   >
 
