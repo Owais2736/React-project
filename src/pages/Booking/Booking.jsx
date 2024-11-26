@@ -1,8 +1,8 @@
 import React from "react"
-import LeftNavbar from "../../components/LeftNavbar"
 import DashboardCard from "../../components/DashboardCard"
 import { useState } from "react"
 import Button1 from "../../components/Button1"
+import LeftNav from "../../components/LeftNav"
 
 function Booking() {
   const [toogle, setToogle] = useState("booking")
@@ -41,12 +41,7 @@ function Booking() {
 
       <section className="main1">
         <div className="w-full  flex gap-[300px] ">
-
-          <div className='w-[20%]'>
-            <div className='w-[20%] fixed mt-[-90px]'>
-              <LeftNavbar />
-            </div>
-          </div>
+<LeftNav/>
 
           {toogle === "booking" && (
             <div className="Booking">

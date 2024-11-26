@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/image1.webp",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    },
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/images2.jpg",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    },
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/images3.jpg",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    },
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/image4.webp",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    },
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/image5.avif",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    },
+    {
+        "name": "Abu Hamza",
+        "department":"Head of Leading Department",
+        "src":"src/images/team/image1.webp",
+        "description":"Enjoy your favorite dishe and a lovely your friends and family and have a great time. Food from local food trucks will be available for purchase..."
+
+    }
+]

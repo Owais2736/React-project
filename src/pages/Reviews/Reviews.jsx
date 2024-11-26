@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { Button, message, Modal } from 'antd';
-import LeftNavbar from '../../components/LeftNavbar'
 import reviews from "../../Json/reviews.json"
 import Button1 from '../../components/Button1.jsx';
 import { useForm } from "react-hook-form"
+import LeftNav from '../../components/LeftNav.jsx';
 
 
 function Reviews() {
@@ -99,12 +99,7 @@ function Reviews() {
 
         <div className="w-full  flex gap-[270px] ">
 
-          <div className='w-[20%]'>
-            <div className='w-[20%] fixed mt-[-45px]'>
-              <LeftNavbar />
-            </div>
-
-          </div>
+          <LeftNav/>
 
           <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
