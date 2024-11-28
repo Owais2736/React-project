@@ -86,7 +86,7 @@ const router = createBrowserRouter([
 
   {
     path: "/appcontent",
-    element: <><Navbar /><LeftNavbar />< AppContent /></>
+    element: <><Navbar />< AppContent /></>
   },
 ]);
 
