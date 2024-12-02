@@ -41,7 +41,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/department",
-    element: <><Navbar /><LeftNavbar /><Department /></>
+    element: <><Navbar /><Department /></>
   },
   {
     path: "/service",
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
 
   {
     path: "/event",
-    element: <><Navbar /><LeftNavbar />< Events /></>
+    element: <><Navbar />< Events /></>
   },
 
   {
