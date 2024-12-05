@@ -59,7 +59,7 @@ const router = createBrowserRouter([
 
   {
     path: "/gallery",
-    element: <><Navbar /><LeftNavbar />< Gallery /></>
+    element: <><Navbar />< Gallery /></>
   },
 
   {
