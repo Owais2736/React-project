@@ -20,7 +20,7 @@ function Elements() {
     <>
 
       <section className='main'>
-        <div className="left w-full  flex gap-[270px] ">
+        <div className="left w-full mt-6 flex gap-[270px] ">
           <LeftNav />
 
           <div className={`flex p-7 gap-4 flex-wrap w-[76%] rounded-xl mt-7  ml-[-250px] bg-gray-100  `}>

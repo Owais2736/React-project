@@ -5,7 +5,8 @@ import depart from '../Json/dashboardDepartment.json'
 function DasboardDepartment() {
     return (
         <>
-            <div className="w-[43vw] min-h-[370px] bg-gray-100 rounded-2xl">
+        
+            <div className="w-[40vw] min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">

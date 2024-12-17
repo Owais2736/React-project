@@ -10,7 +10,7 @@ function Services() {
       </section>
       
       <section className='main'>
-        <div className="w-full  flex gap-[240px] ">
+        <div className="w-full mt-[-20px]  flex gap-[240px] ">
           <LeftNav />
           <div className={`flex  gap-4 flex-wrap  mt-7  `}>
             <ServiceCard/>

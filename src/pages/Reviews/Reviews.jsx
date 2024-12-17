@@ -97,7 +97,7 @@ function Reviews() {
 
       <section className='main'>
 
-        <div className="w-full  flex gap-[270px] ">
+        <div className="w-full mt-[-20px] flex gap-[270px] ">
 
           <LeftNav/>
 

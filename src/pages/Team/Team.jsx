@@ -54,7 +54,7 @@ function Team() {
       </section>
 
       <section className='main'>
-        <div className="w-full  flex gap-[270px] ">
+        <div className="w-full mt-[-10px] flex gap-[270px] ">
           <LeftNav />
           <div className={`flex p-4 gap-4 flex-wrap w-[78%] rounded-xl mt-4  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {team.map(data => {

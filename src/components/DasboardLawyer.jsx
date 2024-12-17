@@ -5,7 +5,7 @@ import lawyer from '../Json/dashboardLawer.json'
 function DasboardLawyer() {
     return (
         <>
-            <div className="w-[37vw] min-h-[370px] bg-gray-100 rounded-2xl">
+            <div className="w-[35vw] min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">

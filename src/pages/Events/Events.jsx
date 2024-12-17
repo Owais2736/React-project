@@ -11,7 +11,7 @@ function Events() {
       </section>
 
       <section className='main'>
-        <div className="w-full  flex gap-[240px] ">
+        <div className="w-full mt-[-20px] flex gap-[240px] ">
           <LeftNav />
           <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-230px] bg-gray-100  `}>
             <div className={`flex  gap-3 flex-wrap  mt-[-5px]  `}>
