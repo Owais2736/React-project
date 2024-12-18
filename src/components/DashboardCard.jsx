@@ -23,7 +23,7 @@ function DashboardCard() {
   return (
     <>
 
-      <div className='flex mt-2 gap-6 w-[78%] '>
+      <div className='flex mt-2 gap-6 w-[73vw]'>
         {dashboard.map(data => {
           return (
             <div onClick={showModal} key={data.name} className="card1 p-5 w-[31vw] rounded-xl flex flex-col gap-1 bg-gray-100 "  >
@@ -79,7 +79,7 @@ function DashboardCard() {
                   </div>
                 </div>
 
-                <div className="flex justify-center  ml-[-50px] mt-5">
+                <div className="flex justify-start  mt-5">
 
                   <div>
                     <Button1 title="Evening" background="bg-white" round="rounded-xl" width="w-[100px]" height="h-9" svg={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="brown" fill="none">
@@ -169,7 +169,7 @@ function DashboardCard() {
                 </div>
               </div>
 
-              <div className="flex justify-center  ml-[-50px] mt-5">
+              <div className="flex justify-start   mt-5">
 
                 <div>
                   <Button1 title="Evening" background="bg-white" round="rounded-xl" width="w-[100px]" height="h-9" svg={<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="brown" fill="none">
@@ -190,12 +190,12 @@ function DashboardCard() {
 
 
 
-              <div className="flex gap-2 justify-center mt-3">
+              <div className="flex gap-3 ml-5 justify-start mt-3">
                 <div className="text-[12px] text-[blue] ml-[-15px]"><p>Lawyer</p></div>
                 <div className="w-64 h-[6px] mt-2 bg-blue-600 border-2"></div>
               </div>
 
-              <div className="flex gap-3 justify-center mt-3 ml-[-100px]">
+              <div className="flex gap-3 justify-start mt-3 ">
 
                 <div className="w-12 h-5 rounded-xl">
                   <img className="rounded-xl" src="src/images/Reviews/profile.jpg" alt="" srcset="" />

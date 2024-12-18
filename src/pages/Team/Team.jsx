@@ -59,7 +59,7 @@ function Team() {
           <div className={`flex p-4 gap-4 flex-wrap w-[78%] rounded-xl mt-4  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {team.map(data => {
               return (
-                <div key={data.name} className='card w-[320px] h-[400px] rounded-xl  bg-white'>
+                <div key={data.name} className='card w-[24vw] h-[400px] rounded-xl  bg-white'>
                   <Modal className='' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                     <center>
                       <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="red" fill="none">

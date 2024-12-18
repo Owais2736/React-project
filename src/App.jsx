@@ -4,11 +4,12 @@ import Button1 from "./components/Button1";
 
 import DashboardCard from "./components/DashboardCard"
 import LeftNav from "./components/LeftNav"
-import DasboardDepartment from "./components/DasboardDepartment"
+
 import DasboardLawyer from "./components/DasboardLawyer"
-import CreateForm from "./components/CreateForm";
+import DepartmentForm from './components/DepartmentForm'
 import { Link } from "react-router-dom"
 import depart from './Json/dashboardDepartment.json'
+import TeamForm from "./components/TeamForm";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
           <div className={` mt-4`}>
             <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Department</div>
           </div>
-          <div className={`${!toogle ? "hidden" : "block"}  ${!toogle ? "" : "mr-[750px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}   `}>
+          <div className={`${!toogle ? "hidden" : "block"}  ${!toogle ? "" : "mr-[57vw]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}   `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : ""} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" 
                />
           </div>
@@ -39,15 +40,15 @@ function App() {
       </section>
 
       <section className="main1">
-        <div className="w-full  flex gap-[300px] ">
+        <div className="w-full  flex gap-4 ">
           <LeftNav />
           <div className={` flex flex-col gap-4 ${!toogle ? "" : "hidden"}`}>
             <div>
               <DashboardCard />
             </div>
-            <div className="w-[93%] flex gap-4">
+            <div className="w-[78vw] flex gap-4">
               {/* department card */}
-            <div className="w-[40vw] min-h-[370px] bg-gray-100 rounded-2xl">
+            <div className="w-[55vw] min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">
@@ -98,8 +99,8 @@ function App() {
             </div>
           </div>
 
-          <div className={`${!toogle ? "hidden" : ""}`}>
-            <CreateForm />
+          <div className={`mt-3 ${!toogle ? "hidden" : ""}`}>
+            <TeamForm/>
            </div>
         </div>
       </section>
