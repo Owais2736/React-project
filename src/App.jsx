@@ -46,9 +46,9 @@ function App() {
             <div>
               <DashboardCard />
             </div>
-            <div className="w-[78vw] flex gap-4">
+            <div className="w-[78vw] flex flex-col sm:flex-row gap-4">
               {/* department card */}
-            <div className="w-[55vw] min-h-[370px] bg-gray-100 rounded-2xl">
+            <div className="sm:w-[55vw] w-[90vw] min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">

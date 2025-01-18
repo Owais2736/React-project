@@ -23,10 +23,10 @@ function DashboardCard() {
   return (
     <>
 
-      <div className='flex mt-2 gap-6 w-[73vw]'>
+      <div className='flex flex-col sm:flex-row w-[95vw]  mt-2 gap-6 sm:w-[73vw]'>
         {dashboard.map(data => {
           return (
-            <div onClick={showModal} key={data.name} className="card1 p-5 w-[31vw] rounded-xl flex flex-col gap-1 bg-gray-100 "  >
+            <div onClick={showModal} key={data.name} className="card1 p-5 sm:w-[31vw] w-[90vw] rounded-xl flex flex-col gap-1 bg-gray-100 "  >
 
               <Modal
                 open={isModalOpen}

@@ -7,11 +7,11 @@ function Navbar() {
     return (
         <>
 
-            <div className='flex justify-between w-screen z-10 sticky top-0 h-[80px] bg-white items-center p-10 '>
+            <div className='flex sm:justify-between justify-start w-screen z-10 sticky top-0 h-[80px] bg-white items-center sm:p-10  '>
 
 
 
-                <div className='flex items-center gap-16 p-14  '>
+                <div className='flex items-center sm:gap-16 gap-6 sm:p-14 p-10  '>
                     <div className='w-[130px] h-auto'>
                         <img className='w-full h-full' src="src/images/Navbar/logo.png" alt="Logo" srcset="" />
                     </div>
@@ -25,7 +25,7 @@ function Navbar() {
 
 
 
-                <div className='flex items-center gap-5'>
+                <div className='hidden sm:flex sm:items-center sm:gap-5'>
                     <div className='w-[200px] h-[40px] border-2 rounded-[50px]'>
                         <input className='w-full h-full text-[14px] pl-4' type="text" placeholder='Search' />
                     </div>
