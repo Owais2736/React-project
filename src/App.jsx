@@ -64,7 +64,7 @@ function App() {
                     {
                         depart.map(data => {
                             return (
-                             <div className='w-[250px] bg-white  rounded-2xl '>
+                             <div className='w-[450px] sm:w-[250px] bg-white  rounded-2xl '>
 
                                     <div className='flex  gap-4 p-3'>
                                         <div className='h-[120px] w-[100px]'>

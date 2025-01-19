@@ -41,7 +41,7 @@ function Team() {
           <div className={` mt-4`}>
             <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Team</div>
           </div>
-          <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}   `}>
+          <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}  cursor-pointer  `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
               toogle || (
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="26" fill="none">
@@ -56,7 +56,7 @@ function Team() {
       <section className='main'>
         <div className="w-full mt-[-10px] flex gap-[270px] ">
           <LeftNav />
-          <div className={`flex flex-col sm:flex-row p-4 gap-4 flex-wrap w-[78%] rounded-xl mt-4  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
+          <div className={`flex flex-col sm:flex-row p-4 gap-4 flex-wrap w-[92%] sm:w-[78%] rounded-xl mt-4 ml-[-330px]  sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {team.map(data => {
               return (
                 <div key={data.name} className='card w-[24vw] h-[400px] rounded-xl  bg-white'>

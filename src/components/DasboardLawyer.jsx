@@ -20,7 +20,7 @@ function DasboardLawyer() {
                 <div className="flex flex-wrap gap-3 p-4 pt-0">
                     {lawyer.map(data => {
                         return (
-                            <div key={data.name} className='card w-[212px]   rounded-xl  bg-white'>
+                            <div key={data.name} className='card w-[450px] sm:w-[212px]   rounded-xl  bg-white'>
 
                                 <div className='flex flex-col pl-4 gap-3'>
                                     <div className='flex gap-5 pt-9  items-center mt-[-30px] '>
