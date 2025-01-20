@@ -6,7 +6,7 @@ import NewCard from '../../components/NewCard'
 function Update() {
   return (
     <>
-      <section className='top'>
+      <section className='top mt-8 items-center'>
         <Navbar2 buttonTitle={"Add New"} title1={"News and updates"} />
       </section>
 

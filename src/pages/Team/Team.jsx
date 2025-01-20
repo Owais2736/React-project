@@ -36,7 +36,7 @@ function Team() {
   return (
     <>
       <section className='top'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between items-center mt-8'>
           <div className={`font-bold text-[14px] ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
           <div className={` mt-4`}>
             <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Team</div>
@@ -56,7 +56,7 @@ function Team() {
       <section className='main'>
         <div className="w-full mt-[-10px] flex gap-[270px] ">
           <LeftNav />
-          <div className={`flex flex-col sm:flex-row p-4 gap-4 flex-wrap w-[92%] sm:w-[78%] rounded-xl mt-4 ml-[-330px]  sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
+          <div className={`flex flex-col sm:flex-row p-4 gap-4 flex-wrap w-full sm:w-[78%] rounded-xl mt-4 ml-[-350px]  sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {team.map(data => {
               return (
                 <div key={data.name} className='card w-[full] sm:w-[24vw] h-[400px] rounded-xl  bg-white'>
