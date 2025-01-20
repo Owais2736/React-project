@@ -101,7 +101,7 @@ function Reviews() {
 
           <LeftNav/>
 
-          <div className={`flex p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
+          <div className={`flex p-7 gap-4 flex-wrap w-[95%] sm:w-[78%] rounded-xl mt-7  ml-[-340px] sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
               return (
                 <div className='w-80 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>

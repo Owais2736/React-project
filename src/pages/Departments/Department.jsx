@@ -13,7 +13,7 @@ function Department() {
       <section className='main'>
         <div className="w-full mt-[-20px] flex gap-[240px] ">
           <LeftNav />
-          <div className={`flex flex-col sm:flex-row p-7 gap-4 flex-wrap w-[78%] rounded-xl mt-7  ml-[-230px] bg-gray-100  `}>
+          <div className={`flex flex-col sm:flex-row p-7 gap-4 flex-wrap w-[94%] sm:w-[78%] rounded-xl mt-7 ml-[-310px] sm:ml-[-230px] bg-gray-100  `}>
             <div className={`flex flex-col sm:flex-row justify-start ml-[-14px]  gap-3 flex-wrap  mt-[-5px]  `}>
               <DepartmentCard />
             </div>

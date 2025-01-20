@@ -41,7 +41,7 @@ function Booking() {
       </section>
 
       <section className="main1">
-        <div className="w-full  flex gap-10 ">
+        <div className="w-full  flex gap-4 sm:gap-10 ">
 <LeftNav/>
 
           {toogle === "booking" && (

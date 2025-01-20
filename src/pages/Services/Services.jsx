@@ -5,7 +5,7 @@ import Navbar2 from '../../components/Navbar2'
 function Services() {
   return (
     <>
-      <section className='top'>
+      <section className='top mt-8'>
         <Navbar2 buttonTitle = {"Add Services"} title1 = {"Services"}/>
       </section>
       

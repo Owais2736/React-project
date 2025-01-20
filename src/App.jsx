@@ -28,7 +28,7 @@ function App() {
     <>
     <section className='top'>
         <div className='flex  justify-between'>
-          <div className={`font-bold text-[14px] ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Bookings</div>
+          <div className={`font-bold text-[14px] ml-[21vw]  mt-4  ${!toogle ? "" : "hidden"}`}>Bookings</div>
           <div className={` mt-4`}>
             <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Department</div>
           </div>
@@ -43,7 +43,7 @@ function App() {
         <div className="w-full  flex gap-4 ">
           <LeftNav />
           <div className={` flex flex-col gap-4 ${!toogle ? "" : "hidden"}`}>
-            <div>
+            <div className="sm:mt-0 mt-8 sm:ml-[-25px]">
               <DashboardCard />
             </div>
             <div className="w-[78vw] flex flex-col sm:flex-row gap-4">

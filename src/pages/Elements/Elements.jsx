@@ -23,7 +23,7 @@ function Elements() {
         <div className="left w-full mt-6 flex gap-[270px] ">
           <LeftNav />
 
-          <div className={`flex p-7 gap-4 flex-wrap w-[76%] rounded-xl mt-7  ml-[-250px] bg-gray-100  `}>
+          <div className={`flex p-7 gap-4 flex-wrap w-full sm:w-[76%] rounded-xl mt-7 ml-[-340px]  sm:ml-[-250px] bg-gray-100  `}>
             <div className='w-[70%]'>
               <form onSubmit={handleSubmit(onSubmit)} action=''>
                 <label className='text-[10px] text-[gray]'>Know Your Rights</label>
@@ -42,7 +42,7 @@ function Elements() {
                 <input className='w-[144%] rounded-xl h-11  mt-2 text-[14px] pl-2 border-2 ' type='text' placeholder='Enter text' {...register("userReview", { required: { value: true, message: "This is required field" }, minLength: { value: 5, message: "Min length is 5" } })} />
                 {errors.userReview && <span>{errors.userReview.message}</span>}
                 <br />
-                <input className='w-[140px] ml-[60vw] h-8 mt-2 bg-blue-700 text-[white] font-semibold text-[14px] cursor-pointer rounded-xl' disabled={isSubmitting} type="submit" value="ADD" />
+                <input className='w-[140px] ml-[210px] sm:ml-[60vw] h-8 mt-2 bg-blue-700 text-[white] font-semibold text-[14px] cursor-pointer rounded-xl' disabled={isSubmitting} type="submit" value="ADD" />
                 {errors.forms && <span>{errors.forms.message}</span>}
               </form>
             </div>
