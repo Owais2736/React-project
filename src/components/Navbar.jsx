@@ -24,11 +24,11 @@ function Navbar() {
          
         >
           {isOpen ? (
-            <span className="text-xl   font-bold"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#000000" fill="none">
+            <span className="text-xl   font-bold"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
             <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
         </svg></span>
           ) : (
-            <span className="text-xl  font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#000000" fill="none">
+            <span className="text-xl  font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#000000" fill="none">
             <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
             <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -130,11 +130,11 @@ function Navbar() {
       
 
                 <div className='flex items-center sm:gap-16 gap-6 sm:p-14 p-10  '>
-                    <div className='w-[130px] h-auto'>
+                    <div className='w-[100px] md:w-[130px] h-auto'>
                         <img className='w-full h-full' src="images/Navbar/logo.png" alt="Logo" srcset="" />
                     </div>
 
-                    <div className='w-[150px] text-[24px] h-[70px] font-bold mt-9 '>
+                    <div className='w-[140px] md:w-[150px] text-[24px] h-[70px] font-bold mt-9 '>
                         <p className='text-center'><span className='text-blue-800'>38</span> Bookings</p>
 
                     </div>
