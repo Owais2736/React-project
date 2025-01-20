@@ -198,7 +198,7 @@ function DashboardCard() {
               <div className="flex gap-3 justify-start mt-3 ">
 
                 <div className="w-12 h-5 rounded-xl">
-                  <img className="rounded-xl" src="src/images/Reviews/profile.jpg" alt="" srcset="" />
+                  <img className="rounded-xl" src="images/Reviews/profile.jpg" alt="" srcset="" />
                 </div>
 
                 <div className="leading-5">

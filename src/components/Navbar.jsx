@@ -1,14 +1,13 @@
 import React from 'react'
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom'
-import LeftNavbar from './LeftNavbar';
+
 
 
 
 function Navbar() {
      const [isOpen, setIsOpen] = useState(false);
-    
-      // Function to toggle menu
+  
       const toggleMenu = () => {
         setIsOpen(!isOpen);
       };
