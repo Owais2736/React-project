@@ -36,8 +36,8 @@ function Team() {
   return (
     <>
       <section className='top'>
-        <div className='flex justify-between items-center mt-8'>
-          <div className={`font-bold text-[14px] ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
+        <div className='flex justify-between items-center text-center mt-8 sm:mt-3'>
+          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
           <div className={` mt-4`}>
             <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Team</div>
           </div>

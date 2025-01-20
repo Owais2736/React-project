@@ -12,22 +12,7 @@ function LeftNavbar() {
   return (
     <>
       <div className="cursor-pointer mt-9  ml-[-10px]  ">
-        {/* Hamburger Icon */}
-        <div
-         onClick={toggleMenu}
-          className="block md:hidden p-3   cursor-pointer  text-blue-800"
-         
-        >
-          {isOpen ? (
-            <span className="text-xl   font-bold">&#x2715; {/* Cross Icon */}</span>
-          ) : (
-            <span className="text-xl  font-bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" color="#000000" fill="none">
-            <path d="M4 5L20 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M4 19L20 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg></span>
-          )}
-        </div>
+        
 
         {/* Sidebar Menu */}
         <ul

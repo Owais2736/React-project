@@ -52,9 +52,9 @@ function Reviews() {
   return (
     <>
       <section className='top'>
-        <div className='flex justify-between'>
+        <div className='flex justify-between mt-8 sm:mt-3'>
 
-          <div className={`font-bold text-[14px] ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
+          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
 
           <div className={` mt-4`}>
 

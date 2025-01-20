@@ -6,7 +6,7 @@ import DepartmentCard from '../../components/DepartmentCard'
 function Department() {
   return (
     <>
-      <section className='top mt-8'>
+      <section className='top mt-8 sm:mt-3'>
         <Navbar2 buttonTitle={"Add New"} title1={"26 Departments"} />
       </section>
 
