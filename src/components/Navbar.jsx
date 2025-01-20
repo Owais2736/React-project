@@ -13,7 +13,7 @@ function Navbar() {
 
                 <div className='flex items-center sm:gap-16 gap-6 sm:p-14 p-10  '>
                     <div className='w-[130px] h-auto'>
-                        <img className='w-full h-full' src="src/images/Navbar/logo.png" alt="Logo" srcset="" />
+                        <img className='w-full h-full' src="images/Navbar/logo.png" alt="Logo" srcset="" />
                     </div>
 
                     <div className='w-[150px] text-[24px] h-[70px] font-bold mt-9 '>
@@ -47,7 +47,7 @@ function Navbar() {
 
                     <div className='w-[50px] h-[50px] border-2 rounded-[100px]'>
 
-                        <img className='w-[40px] h-[40px] border-2 rounded-[100px] mt-[3px] ml-[3px]' src="src/images/Navbar/profile.png" alt="profile" srcset="" />
+                        <img className='w-[40px] h-[40px] border-2 rounded-[100px] mt-[3px] ml-[3px]' src="images/Navbar/profile.png" alt="profile" srcset="" />
 
 
                     </div>

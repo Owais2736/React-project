@@ -61,7 +61,7 @@ function DepartmentCard() {
                             </Modal>
                             <div className='flex mt-[-35px] gap-4 p-3'>
                                 <div className='h-[150px] w-[140px]'>
-                                    <img className='w-full h-full' src="src/images/Departments/profile.png" alt="" srcset="" />
+                                    <img className='w-full h-full' src="images/Departments/profile.png" alt="" srcset="" />
                                 </div>
                                 <div className='mt-3'>
                                     <h2 className='font-semibold text-[20px] leading-6'>{data.name} <br /> {data.name2}</h2>

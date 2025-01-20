@@ -3,36 +3,36 @@
             "name": "Corporate",
             "name2": "Departments",
             "noOfLawyer": "26 Lawyers",
-            "image1": "src/images/Departments/image4.webp",
-            "image2": "src/images/Departments/image5.avif",
-            "image3": "src/images/Departments/images3.jpg"
+            "image1": "images/Departments/image4.webp",
+            "image2": "images/Departments/image5.avif",
+            "image3": "images/Departments/images3.jpg"
        
     },
     {
         "name": "Corporate",
         "name2": "Departments",
         "noOfLawyer": "26 Lawyers",
-        "image1": "src/images/Departments/image4.webp",
-        "image2": "src/images/Departments/image5.avif",
-        "image3": "src/images/Departments/images3.jpg"
+        "image1": "images/Departments/image4.webp",
+        "image2": "images/Departments/image5.avif",
+        "image3": "images/Departments/images3.jpg"
    
 },
 {
     "name": "Corporate",
     "name2": "Departments",
     "noOfLawyer": "26 Lawyers",
-    "image1": "src/images/Departments/image4.webp",
-    "image2": "src/images/Departments/image5.avif",
-    "image3": "src/images/Departments/images3.jpg"
+    "image1": "images/Departments/image4.webp",
+    "image2": "images/Departments/image5.avif",
+    "image3": "images/Departments/images3.jpg"
 
 },
 {
     "name": "Corporate",
     "name2": "Departments",
     "noOfLawyer": "26 Lawyers",
-    "image1": "src/images/Departments/image4.webp",
-    "image2": "src/images/Departments/image5.avif",
-    "image3": "src/images/Departments/images3.jpg"
+    "image1": "images/Departments/image4.webp",
+    "image2": "images/Departments/image5.avif",
+    "image3": "images/Departments/images3.jpg"
 
 }
 ]

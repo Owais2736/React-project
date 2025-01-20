@@ -68,7 +68,7 @@ function App() {
 
                                     <div className='flex  gap-4 p-3'>
                                         <div className='h-[120px] w-[100px]'>
-                                            <img className='w-full h-full' src="src/images/Departments/profile.png" alt="" srcset="" />
+                                            <img className='w-full h-full' src="images/Departments/profile.png" alt="" srcset="" />
                                         </div>
                                         <div className=''>
                                             <h2 className='font-semibold text-[16px] leading-6'>{data.name} <br /> {data.name2}</h2>
