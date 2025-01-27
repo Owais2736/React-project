@@ -76,7 +76,7 @@ function FaqsForm2() {
 
 <h2 className='text-[12px] text-gray-500 mt-2'>Answer</h2>
 <textarea 
-  className='w-full rounded-lg mt-2 text-[14px] p-3' 
+  className='w-full min-h-[150px] rounded-lg mt-2 text-[14px] p-3' 
   name='desc'
   value={form.desc?form.desc:""} 
   rows={4} 
