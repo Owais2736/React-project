@@ -68,12 +68,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/faqs",
-    element: <><Navbar /><LeftNavbar />< FAQs /></>
+    element: <><Navbar />< FAQs /></>
   },
 
   {
     path: "/law",
-    element: <><Navbar /><LeftNavbar />< Laws /></>
+    element: <><Navbar />< Laws /></>
   },
   {
     path: "/element",
@@ -92,7 +92,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    
     <RouterProvider router={router} />
   </StrictMode>,
 )
