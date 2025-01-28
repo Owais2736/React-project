@@ -20,12 +20,12 @@ function LeftNavbar() {
             isOpen ? "block" : "hidden"
           } md:block`}
         >
-          <NavLink to="/">
+          <NavLink  to="/">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               Dashboard
             </li>
           </NavLink>
-          <NavLink to="/booking">
+          <NavLink  to="/booking">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               Booking
             </li>

@@ -4,6 +4,8 @@ import Button1 from '../../components/Button1'
 import { Button, message, Modal } from 'antd';
 import LeftNav from '../../components/LeftNav'
 import team from '../../Json/team.json'
+import LawyerForm from '../../components/LawyerForm'
+
 
 function Team() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -39,7 +41,7 @@ function Team() {
         <div className='flex justify-between items-center text-center mt-8 sm:mt-3'>
           <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
           <div className={` mt-4`}>
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Team</div>
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 sm:w-[100px] w-[100px] sm:ml-[21vw]  `}>Create Team</div>
           </div>
           <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}  cursor-pointer  `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
@@ -135,6 +137,11 @@ function Team() {
               )
             })}
           </div>
+
+          
+          <div className={`mt-3 sm:ml-0  ml-[-300px] ${!toogle ? "hidden" : ""}`}>
+            <LawyerForm />
+           </div>
         </div>
       </section>
     </>
