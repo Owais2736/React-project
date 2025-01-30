@@ -40,7 +40,7 @@ function App() {
       </section>
 
       <section className="main1">
-        <div className="w-full  flex gap-4 ">
+        <div className="w-full mt-[-5px]  flex gap-4 ">
           <LeftNav />
           <div className={` flex flex-col gap-4 ${!toogle ? "" : "hidden"}`}>
             <div className="sm:mt-0 mt-2 sm:ml-[-25px]">

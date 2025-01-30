@@ -17,7 +17,7 @@ function FAQs() {
     <>
 
       <section className='main'>
-        <div className="w-full  flex gap-[240px] ">
+        <div className="w-full mt-4 flex gap-[240px] ">
           <LeftNav />
 
           <div className={` p-7  w-full sm:w-[78%] rounded-xl mt-7  ml-[-310px] sm:ml-[-230px] bg-gray-100  `}>

@@ -52,13 +52,13 @@ function Reviews() {
   return (
     <>
       <section className='top'>
-        <div className='flex justify-between mt-8 sm:mt-3'>
+        <div className='flex justify-between mt-8 gap-3 sm:mt-3'>
 
           <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
 
           <div className={` mt-4`}>
 
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-[21vw]  `}>Create Reviews</div>
+            <div className={`font-bold w-[100px] text-[14px] ${!toogle ? "hidden" : ""} sm:ml-[21vw] ml-3  `}>Create Reviews</div>
 
           </div>
 
@@ -104,8 +104,8 @@ function Reviews() {
           <div className={`flex p-7 gap-4 flex-wrap w-full sm:w-[78%] rounded-xl mt-7  ml-[-340px] sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
               return (
-                <div className='w-80 p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
-                  <div onClick={showModal} className='ml-64 mt-1 bg-gray-100 rounded-md h-6 w-7 cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
+                <div className='w-80 sm:w-[23vw] p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
+                  <div onClick={showModal} className='ml-auto mt-1 bg-gray-100 rounded-md h-6 w-7 cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></div>
 
@@ -154,7 +154,7 @@ function Reviews() {
             }
           </div>
 
-          <div className={`w-[75%] ml-[-230px] mt-4 flex gap-4 rounded-xl bg-gray-200 p-11  ${!toogle ? "hidden" : ""} `}>
+          <div className={`sm:w-[79%]  w-full ml-[-340px] sm:ml-[-260px] mt-7 flex gap-4 rounded-xl bg-gray-200 p-11  ${!toogle ? "hidden" : ""} `}>
             <div className='w-24 cursor-pointer border-2 h-20 rounded-xl'>
               <img className='rounded-xl' src="src/images/Reviews/profile.jpg" alt="" srcset="" />
               <input className='w-24 rounded-lg' type="file" />

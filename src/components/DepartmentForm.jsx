@@ -38,8 +38,8 @@ function CreateForm() {
     };
     return (
         <>
-            <div className="w-[77vw]  rounded-xl bg-gray-300">
-                <div className=" w-[77vw]  p-5">
+            <div className="sm:w-[77vw] w-[90vw]  rounded-xl bg-gray-300">
+                <div className=" sm:w-[77vw] w-[90vw]  p-5">
                     <div className="bg-white rounded-xl p-10">
                         <div className="flex items-center space-x-4">
                             <div

@@ -32,8 +32,8 @@ function NewCard() {
                 news.map(data => {
                     return (
 
-                        <div key={data.name} className=' w-[320px] sm:w-[492px] bg-white rounded-xl'>
-                            <div onClick={showModal} className='cursor-pointer ml-[290px] sm:ml-[460px] w-[25px] mt-[-20px] h-6 rounded-lg bg-gray-300 '>
+                        <div key={data.name} className=' w-[320px] sm:w-[36vw] bg-white rounded-xl'>
+                            <div onClick={showModal} className='cursor-pointer ml-auto w-[25px] mt-[-20px] h-6 rounded-lg bg-gray-300 '>
                                 <svg className='mt-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>

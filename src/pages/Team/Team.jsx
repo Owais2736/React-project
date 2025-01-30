@@ -92,7 +92,7 @@ function Team() {
                         <h2 className='font-bold text-[16px]'>{data.name}</h2>
                         <p className='text-[12px] text-[brown]'>{data.department}</p>
                       </div>
-                      <div onClick={showModal} className=' w-[27px] mt-[-10px] ml-4 rounded-lg bg-gray-400 cursor-pointer '>
+                      <div onClick={showModal} className=' w-[27px] mt-[-10px] ml-auto  rounded-lg bg-gray-400 cursor-pointer '>
                         <svg className='cursor-pointer' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
                           <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>

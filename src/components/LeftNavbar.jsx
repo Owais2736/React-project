@@ -80,11 +80,11 @@ function LeftNavbar() {
               Elements
             </li>
           </NavLink>
-          <NavLink to="/webcontent">
+          {/* <NavLink to="/webcontent">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               WebContent
             </li>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/appcontent">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               App content

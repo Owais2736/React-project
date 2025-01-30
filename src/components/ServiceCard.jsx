@@ -32,8 +32,8 @@ function ServiceCard() {
             {
                 service.map(data => {
                     return (
-                        <div key={data.title} className='card flex flex-col sm:ml-0 ml-[-220px] gap-3 w-[330px] rounded-xl  p-3 border-2'>
-                            <div onClick={showModal} className='cursor-pointer ml-[300px] w-[25px] mt-[-20px] h-6 rounded-lg bg-gray-300 '>
+                        <div key={data.title} className='card flex flex-col sm:ml-3 ml-[-220px] gap-3 sm:w-[23vw] w-[330px] rounded-xl  p-3 border-2'>
+                            <div onClick={showModal} className='cursor-pointer ml-auto w-[25px] mt-[-20px] h-6 rounded-lg bg-gray-300 '>
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
                                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
