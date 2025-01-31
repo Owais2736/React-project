@@ -5,7 +5,7 @@ import lawyer from '../Json/dashboardLawer.json'
 function DasboardLawyer() {
     return (
         <>
-            <div className="sm:w-[47vw] w-[90vw]  min-h-[370px] bg-gray-100 rounded-2xl">
+            <div className="md:w-[47vw] w-[90vw]  min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">
@@ -20,12 +20,12 @@ function DasboardLawyer() {
                 <div className="flex flex-wrap gap-3 p-4 pt-0">
                     {lawyer.map(data => {
                         return (
-                            <div key={data.name} className='card w-[450px] sm:w-[212px]   rounded-xl  bg-white'>
+                            <div key={data.name} className='card w-[450px] md:w-[212px]   rounded-xl  bg-white'>
 
                                 <div className='flex flex-col pl-4 gap-3'>
                                     <div className='flex gap-5 pt-9  items-center mt-[-30px] '>
-                                        <div className='w-[50px] rounded-lg h-[50px]'>
-                                            <img className='h-full w-full rounded-lg' src={data.src} alt="" srcset="" />
+                                        <div className='w-[50px] rounded-md h-[50px]'>
+                                            <img className='h-full w-full rounded-md' src={data.src} alt="" srcset="" />
                                         </div>
                                         <div className='font-semibold'>
                                             <h2 className='font-bold text-[16px]'>{data.name}</h2>

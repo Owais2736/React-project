@@ -4,11 +4,11 @@ import { useState } from 'react';
 import news from '../Json/NewAndUpdate.json'
 
 function NewCard() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [imdodalOpen, setImdodalOpen] = useState(false);
     const [isSecModalOpen, setIsSecModalOpen] = useState(false);
 
     const showModal = () => {
-        setIsModalOpen(true);
+        setImdodalOpen(true);
         console.log("click");
 
     };
@@ -16,12 +16,12 @@ function NewCard() {
         setIsSecModalOpen(true);
     };
     const handleCancel = () => {
-        setIsModalOpen(false);
+        setImdodalOpen(false);
     };
 
     const handleSecOk = () => {
         setIsSecModalOpen(false);
-        setIsModalOpen(false);
+        setImdodalOpen(false);
     };
     const handleSecCancel = () => {
         setIsSecModalOpen(false);
@@ -32,13 +32,13 @@ function NewCard() {
                 news.map(data => {
                     return (
 
-                        <div key={data.name} className=' w-[320px] sm:w-[36vw] bg-white rounded-xl'>
-                            <div onClick={showModal} className='cursor-pointer ml-auto w-[25px] mt-[-20px] h-6 rounded-lg bg-gray-300 '>
+                        <div key={data.name} className=' w-[320px] md:w-[36vw] bg-white rounded-xl'>
+                            <div onClick={showModal} className='cursor-pointer ml-auto w-[25px] mt-[-20px] h-6 rounded-md bg-gray-300 '>
                                 <svg className='mt-8' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <Modal className='' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <Modal className='' open={imdodalOpen} onOk={handleOk} onCancel={handleCancel}>
                                 <center>
                                     <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="red" fill="none">
                                         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />

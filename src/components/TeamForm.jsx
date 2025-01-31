@@ -41,13 +41,13 @@ function TeamForm() {
         };
   return (
    <>
-   <div className=" w-screen sm:w-[77vw] rounded-xl bg-gray-300">
-                <div className=" w-full sm:w-[77vw]  p-5">
+   <div className=" w-screen md:w-[77vw] rounded-xl bg-gray-300">
+                <div className=" w-full md:w-[77vw]  p-5">
                     <div className="bg-white rounded-xl p-10">
                         <div className="flex items-center space-x-4">
                             <div
                                 onClick={() => document.getElementById("file-input").click()}
-                                className="profile cursor-pointer p-4 bg-white rounded-lg shadow  hover:bg-gray-200">
+                                className="profile cursor-pointer p-4 bg-white rounded-md shadow  hover:bg-gray-200">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-36 h-24 text-gray-600" >
                                     <path d="M17 6C19.3456 6 20.0184 6 20.8263 6.61994C21.0343 6.77954 21.2205 6.96572 21.3801 7.17372C22 7.98164 22 9.15442 22 11.5V16C22 18.8284 22 20.2426 21.1213 21.1213C20.2426 22 18.8284 22 16 22H8C5.17157 22 3.75736 22 2.87868 21.1213C2 20.2426 2 18.8284 2 16V11.5C2 9.15442 2 7.98164 2.61994 7.17372C2.77954 6.96572 2.96572 6.77954 3.17372 6.61994C3.98164 6 4.65442 6 7 6" />
                                     <path d="M17 7L16.1142 4.78543C15.732 3.82996 15.3994 2.7461 14.4166 2.25955C13.8924 2 13.2616 2 12 2C10.7384 2 10.1076 2 9.58335 2.25955C8.6006 2.7461 8.26801 3.82996 7.88583 4.78543L7 7" />
@@ -60,7 +60,7 @@ function TeamForm() {
                                 <img
                                     src={image}
                                     alt="Selected"
-                                    className="w-32 h-32 rounded-lg border border-gray-300"
+                                    className="w-32 h-32 rounded-md border border-gray-300"
                                 />
                             )}
 

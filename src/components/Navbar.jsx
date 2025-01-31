@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <>
 
-            <div className='flex sm:justify-between justify-start w-screen z-10 sticky top-0 h-[80px] bg-white items-center sm:p-10  '>
+            <div className='flex md:justify-between justify-start w-screen z-10 sticky top-0 h-[80px] bg-white items-center md:p-10  '>
 
   {/* Hamburger Icon */}
   <div
@@ -109,11 +109,11 @@ function Navbar() {
               Elements
             </li>
           </NavLink>
-          <NavLink to="/webcontent">
+          {/* <NavLink to="/webcontent">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               WebContent
             </li>
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/appcontent">
             <li className="ml-5 text-[14px] hover:border-2 border-blue-800 rounded-[60px] cursor-pointer p-2 w-[90%]">
               App content
@@ -128,7 +128,7 @@ function Navbar() {
       </div>
       
 
-                <div className='flex items-center sm:gap-16 gap-6 sm:p-14 p-10  '>
+                <div className='flex items-center md:gap-16 gap-6 md:p-14 p-10  '>
                     <div className='w-[100px] md:w-[130px] h-auto'>
                         <img className='w-full h-full' src="images/Navbar/logo.png" alt="Logo" srcset="" />
                     </div>
@@ -142,7 +142,7 @@ function Navbar() {
 
 
 
-                <div className='hidden sm:flex sm:items-center sm:gap-5'>
+                <div className='hidden md:flex md:items-center md:gap-5'>
                     <div className='w-[200px] h-[40px] border-2 rounded-[50px]'>
                         <input className='w-full h-full text-[14px] pl-4' type="text" placeholder='Search' />
                     </div>

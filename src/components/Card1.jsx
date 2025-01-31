@@ -27,7 +27,7 @@ function Card1({title}) {
 <h2 className='text-[14px] text-[gray]'>{title}</h2>
 </div>
 
-   <div className='w-full sm:w-[24vw] rounded-3xl p-4 bg-gray-200'>
+   <div className='w-full md:w-[24vw] rounded-3xl p-4 bg-gray-200'>
 
   
     <form onSubmit={handleSubmit(onSubmit)} action=''>

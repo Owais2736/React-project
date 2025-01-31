@@ -15,10 +15,10 @@ function Events() {
   return (
     <>
    <section className='top'>
-        <div className='flex justify-between items-center text-center mt-8 sm:mt-3'>
-          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
+        <div className='flex justify-between items-center text-center mt-8 md:mt-3'>
+          <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
           <div className={` mt-4`}>
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 sm:w-[160px] w-[100px] sm:ml-[19vw]  `}>Create Events</div>
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 md:w-[160px] w-[100px] md:ml-[19vw]  `}>Create Events</div>
           </div>
           <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}  cursor-pointer  `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
@@ -35,14 +35,14 @@ function Events() {
       <section className='main'>
         <div className="w-full mt-[-20px] flex gap-[240px] ">
           <LeftNav />
-          <div className={`flex p-7 gap-4 flex-wrap w-full sm:w-[78%] rounded-xl mt-7  ml-[-310px] sm:ml-[-230px] bg-gray-100  ${!toogle ? "" : "hidden"}   `}>
-            <div className={`flex flex-col sm:flex-row sm:ml-0 ml-[-10px] gap-3 flex-wrap  mt-[-5px]  `}>
+          <div className={`flex p-7 gap-4 flex-wrap w-full md:w-[78%] rounded-xl mt-7  ml-[-310px] md:ml-[-230px] bg-gray-100  ${!toogle ? "" : "hidden"}   `}>
+            <div className={`flex flex-col md:flex-row md:ml-0 ml-[-10px] gap-3 flex-wrap  mt-[-5px]  `}>
               <NewCard />
             </div>
           </div>
 
 
-          <div className={`mt-10 sm:ml-[0px]  ml-[70px] ${!toogle ? "hidden" : ""}`}>
+          <div className={`mt-10 md:ml-[0px]  ml-[70px] ${!toogle ? "hidden" : ""}`}>
             <EventForm />
            </div> 
 

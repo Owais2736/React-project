@@ -18,10 +18,10 @@ function Laws() {
         <div className="w-full mt-4 flex gap-[240px] ">
           <LeftNav />
 
-          <div className={` p-7  w-full sm:w-[78%] rounded-xl mt-7  ml-[-310px] sm:ml-[-230px] bg-gray-100  `}>
+          <div className={` p-7  w-full md:w-[78%] rounded-xl mt-7  ml-[-310px] md:ml-[-230px] bg-gray-100  `}>
             <FaqsForm1 />
 
-            <div className={` flex  flex-col sm:flex-row   gap-4 flex-wrap w-full  rounded-xl mt-3   sm:ml-0 pt-5  bg-gray-100  `}>
+            <div className={` flex  flex-col md:flex-row   gap-4 flex-wrap w-full  rounded-xl mt-3   md:ml-0 pt-5  bg-gray-100  `}>
 
               {form}
             </div>

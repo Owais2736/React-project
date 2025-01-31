@@ -5,31 +5,31 @@ import dashboard from '../Json/dashboard.json'
 import { Button, Card, Modal } from 'antd';
 
 function DashboardCard() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [imdodalOpen, setImdodalOpen] = useState(false);
   const showModal = () => {
-    setIsModalOpen(!isModalOpen);
+    setImdodalOpen(!imdodalOpen);
   };
 
   //   const handleComplete = () => {
   // console.log('click');
-  //     setIsModalOpen(false);
+  //     setImdodalOpen(false);
 
   //   };
 
   //   const handleCancelled = () => {
   // console.log('click');
-  //     setIsModalOpen(false);
+  //     setImdodalOpen(false);
   //   };
   return (
     <>
 
-      <div className='flex flex-col ml-6 sm:flex-row w-[95vw]  mt-2 gap-6 sm:w-[73vw]'>
+      <div className='flex flex-col ml-6 md:flex-row w-[95vw]  mt-2 gap-6 md:w-[73vw]'>
         {dashboard.map(data => {
           return (
-            <div onClick={showModal} key={data.name} className="card1 p-5 sm:w-[31vw] w-[93vw] ml-[-27px] sm:ml-0 rounded-xl flex flex-col gap-1 bg-gray-100 "  >
+            <div onClick={showModal} key={data.name} className="card1 p-5 md:w-[31vw] w-[93vw] ml-[-27px] md:ml-0 rounded-xl flex flex-col gap-1 bg-gray-100 "  >
 
               <Modal
-                open={isModalOpen}
+                open={imdodalOpen}
                 footer={null}
 
               // onCancel={handleCancelled}

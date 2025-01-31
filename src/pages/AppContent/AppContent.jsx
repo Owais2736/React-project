@@ -11,7 +11,7 @@ function AppContent() {
     <>
       <section className='top'>
         <div >
-          <ul className="  flex gap-3 sm:mt-0 mt-10 font-bold text-[14px] justify-center  " >
+          <ul className="  flex gap-3 md:mt-0 mt-10 font-bold text-[14px] justify-center  " >
             <li className={`list-item cursor-pointer  ${toogle === "onboarding" ? "text-blue-500" : ""} `} onClick={() => { setToogle("onboarding"); console.log("click"); }} >On Boarding</li>
             <li className={`list-item cursor-pointer ${toogle === "termsAndCondition" ? "text-blue-500" : ""} `} onClick={() => { setToogle("termsAndCondition"); console.log("click"); }} >Terms and Conditions</li>
             <li className={`list-item cursor-pointer ${toogle === "privacy" ? "text-blue-500" : ""} `} onClick={() => setToogle("privacy")} >Privacy</li>
@@ -24,7 +24,7 @@ function AppContent() {
           <LeftNav />
 
           {toogle === "onboarding" && (
-            <div className={`flex p-7 gap-3 flex-wrap w-full sm:w-[78%] rounded-xl mt-7 ml-[-340px] sm:ml-[-250px] bg-gray-100  `}>
+            <div className={`flex p-7 gap-3 flex-wrap w-full md:w-[78%] rounded-xl mt-7 ml-[-340px] md:ml-[-250px] bg-gray-100  `}>
               <Card1 title={"Onboarding screen 01"} />
               <Card1 title={"Onboarding screen 02"} />
               <Card1 title={"Onboarding screen 03"} />
@@ -32,13 +32,13 @@ function AppContent() {
           )}
 
           {toogle === "termsAndCondition" && (
-            <div className={`flex p-7 gap-3 flex-wrap w-full sm:w-[78%] rounded-xl mt-7 ml-[-340px] sm:ml-[-250px] bg-gray-100  `}>
+            <div className={`flex p-7 gap-3 flex-wrap w-full md:w-[78%] rounded-xl mt-7 ml-[-340px] md:ml-[-250px] bg-gray-100  `}>
               <Card2 />
             </div>
           )}
 
           {toogle === "privacy" && (
-            <div className={`flex p-7 gap-3 flex-wrap w-full sm:w-[78%] rounded-xl mt-7  ml-[-340px] sm:ml-[-250px] bg-gray-100  `}>
+            <div className={`flex p-7 gap-3 flex-wrap w-full md:w-[78%] rounded-xl mt-7  ml-[-340px] md:ml-[-250px] bg-gray-100  `}>
               <Card2 />
             </div>
           )}

@@ -20,15 +20,15 @@ function Booking() {
   return (
     <>
       <section className="top">
-        <div className="flex   sm:flex-row flex-col flex-wrap list-none justify-end gap-5 sm:gap-32 items-center   mt-3"  >
-          <ul className="  flex mt-6  sm:ml-0 ml-[-40px]  font-bold text-[14px]  " >
+        <div className="flex   md:flex-row flex-col flex-wrap list-none justify-end gap-5 md:gap-32 items-center   mt-3"  >
+          <ul className="  flex mt-6  md:ml-0 ml-[-40px]  font-bold text-[14px]  " >
             <li className={` cursor-pointer ${toogle === "booking" ? "text-blue-500" : ""} `} onClick={() => { setToogle("booking"); console.log("click"); }} >| Booking</li>
             <li className={` cursor-pointer w-[125px] ${toogle === "pending" ? "text-blue-500" : ""} `} onClick={() => { setToogle("pending"); console.log("click"); }} >| Pending Booking</li>
            
             <li className={` cursor-pointer ${toogle === "completed" ? "text-blue-500" : ""} `} onClick={() => setToogle("completed")} >| Completed</li>
             <li className={` cursor-pointer ${toogle === "canceled" ? "text-blue-500" : ""}`} onClick={() => setToogle("canceled")}>| Canceled</li>
           </ul>
-          <div className="flex sm:gap-0 w-[400px] pl-4 ">
+          <div className="flex md:gap-0 w-[400px] pl-4 ">
             <div>
               <Button1 title="From" input={[<input type="date" value={date} onChange={handleChange} />]} background={"bg-blue-100"} height={'h-11'} width={"w-[160px]"} round={"rounded-xl"} text={"text-[12px]"} />
             </div>
@@ -41,7 +41,7 @@ function Booking() {
       </section>
 
       <section className="main1">
-        <div className="w-full  flex gap-4 sm:gap-10 ">
+        <div className="w-full  flex gap-4 md:gap-10 ">
 <LeftNav/>
 
           {toogle === "booking" && (

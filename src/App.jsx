@@ -28,9 +28,9 @@ function App() {
     <>
     <section className='top'>
         <div className='flex  justify-between'>
-          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]  mt-4  ${!toogle ? "" : "hidden"}`}>Bookings</div>
+          <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]  mt-4  ${!toogle ? "" : "hidden"}`}>Bookings</div>
           <div className={` mt-10`}>
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 w-36 sm:ml-[21vw]  `}>Create Department</div>
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 w-36 md:ml-[21vw]  `}>Create Department</div>
           </div>
           <div className={`${!toogle ? "hidden" : "block"}  ${!toogle ? "" : "mr-[57vw]"}   ${!toogle ? "" : "mr-[60vw] mt-8"}   `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : ""} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" 
@@ -43,12 +43,12 @@ function App() {
         <div className="w-full mt-[-5px]  flex gap-4 ">
           <LeftNav />
           <div className={` flex flex-col gap-4 ${!toogle ? "" : "hidden"}`}>
-            <div className="sm:mt-0 mt-2 sm:ml-[-25px]">
+            <div className="md:mt-0 mt-2 md:ml-[-25px]">
               <DashboardCard />
             </div>
-            <div className="w-[78vw] flex flex-col sm:flex-row gap-4">
+            <div className="w-[78vw] flex flex-col md:flex-row gap-4">
               {/* department card */}
-            <div className="sm:w-[55vw] w-[90vw] min-h-[370px] bg-gray-100 rounded-2xl">
+            <div className="md:w-[55vw] w-[90vw] min-h-[370px] bg-gray-100 rounded-2xl">
 
                 <div className=" flex justify-between items-center ml-5">
                     <div className="font-semibold text-[14px]">
@@ -64,7 +64,7 @@ function App() {
                     {
                         depart.map(data => {
                             return (
-                             <div className='w-[450px] sm:w-[250px] bg-white  rounded-2xl '>
+                             <div className='w-[450px] md:w-[250px] bg-white  rounded-2xl '>
 
                                     <div className='flex  gap-4 p-3'>
                                         <div className='h-[120px] w-[100px]'>
@@ -99,9 +99,11 @@ function App() {
             </div>
           </div>
 
-          <div className={`mt-3 sm:ml-0  ml-[-80px] ${!toogle ? "hidden" : ""}`}>
+          <div className={`mt-3 md:ml-0  ml-[-80px] ${!toogle ? "hidden" : ""}`}>
             <TeamForm/>
            </div>
+
+           
         </div>
       </section>
 

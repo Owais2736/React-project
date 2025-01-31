@@ -7,11 +7,11 @@ import { useState } from 'react'
 function FaqsForm2() {
     const [form, setform] = useState({desc:"Our firm specializes in a variety of practice areas including personal injury, family law, criminal defense, business law, employment law, real estate law, and estate planning." , name: "What types of cases does your firm handle?"})
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [imdodalOpen, setImdodalOpen] = useState(false);
     const [isSecModalOpen, setIsSecModalOpen] = useState(false);
 
     const showModal = () => {
-        setIsModalOpen(true);
+        setImdodalOpen(true);
         console.log("click");
 
     };
@@ -19,12 +19,12 @@ function FaqsForm2() {
         setIsSecModalOpen(true);
     };
     const handleCancel = () => {
-        setIsModalOpen(false);
+        setImdodalOpen(false);
     };
 
     const handleSecOk = () => {
         setIsSecModalOpen(false);
-        setIsModalOpen(false);
+        setImdodalOpen(false);
     };
     const handleSecCancel = () => {
         setIsSecModalOpen(false);
@@ -38,17 +38,17 @@ function FaqsForm2() {
   return (
    
    <>
-<div className='w-full sm:w-[36vw] bg-gray-200 rounded-xl p-4'>
+<div className='w-full md:w-[36vw] bg-gray-200 rounded-xl p-4'>
 <div className='flex justify-between'>
     <div>
         <h2 className='text-[12px] text-gray-500'>Question</h2>
     </div>
-    <div onClick={showModal} className='cursor-pointer  w-[25px]  h-6 rounded-lg bg-gray-300 '>
+    <div onClick={showModal} className='cursor-pointer  w-[25px]  h-6 rounded-md bg-gray-300 '>
                                 <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
                                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <Modal className='' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                            <Modal className='' open={imdodalOpen} onOk={handleOk} onCancel={handleCancel}>
                                 <center>
                                     <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="red" fill="none">
                                         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -72,11 +72,11 @@ function FaqsForm2() {
 
 </div>
 
-<input className='w-full h-9 rounded-lg mt-3 text-[14px] p-2' type="text" name='name' value={form.name?form.name:""} onChange={handleChange} />
+<input className='w-full h-9 rounded-md mt-3 text-[14px] p-2' type="text" name='name' value={form.name?form.name:""} onChange={handleChange} />
 
 <h2 className='text-[12px] text-gray-500 mt-2'>Answer</h2>
 <textarea 
-  className='w-full min-h-[150px] rounded-lg mt-2 text-[14px] p-3' 
+  className='w-full min-h-[150px] rounded-md mt-2 text-[14px] p-3' 
   name='desc'
   value={form.desc?form.desc:""} 
   rows={4} 

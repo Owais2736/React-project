@@ -9,14 +9,14 @@ function EventForm() {
     return (
         <>
             <section className='main'>
-                <div className="w-full mt-7 sm:mt-2 flex gap-[240px] ">
+                <div className="w-full mt-7 md:mt-2 flex gap-[240px] ">
 
-                    <div className={`flex flex-col gap-7  h-72 p-7 w-screen sm:w-[98%] rounded-xl mt-[-10px] ml-[-308px] sm:ml-0 bg-gray-100  `}>
+                    <div className={`flex flex-col gap-7  h-72 p-7 w-screen md:w-[98%] rounded-xl mt-[-10px] ml-[-308px] md:ml-0 bg-gray-100  `}>
                         <div>
                             <GallaryForm1 />
                         </div>
 
-                        <div className='rounded-xl mt-8 w-screen  sm:w-[78vw] ml-[-27px] pt-3 p-7 bg-gray-100 '>
+                        <div className='rounded-xl mt-8 w-screen  md:w-[78vw] ml-[-27px] pt-3 p-7 bg-gray-100 '>
                         
                             <EventForm2 />
 

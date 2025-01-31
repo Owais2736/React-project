@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Button1 from '../../components/Button1'
 import LeftNav from '../../components/LeftNav'
 import ServiceCard from '../../components/ServiceCard'
+import LawyerForm from '../../components/LawyerForm'
 
 function Services() {
   const [toogle, setToogle] = useState(false)
@@ -13,10 +14,10 @@ function Services() {
   return (
     <>
     <section className='top'>
-        <div className='flex justify-between items-center text-center mt-8 sm:mt-3'>
-          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>Services</div>
+        <div className='flex justify-between items-center text-center mt-8 md:mt-3'>
+          <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>Services</div>
           <div className={` mt-4`}>
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 sm:w-[160px] w-[100px] sm:ml-[19vw]  `}>Create Services</div>
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 md:w-[160px] w-[100px] md:ml-[19vw]  `}>Create Services</div>
           </div>
           <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}  cursor-pointer  `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add Services"} background="bg-blue-200" width="w-[130px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
@@ -31,11 +32,16 @@ function Services() {
       </section>
       
       <section className='main'>
-        <div className="w-full mt-1 sm:mt-[-20px]  flex gap-[240px]  ">
+        <div className="w-full mt-1 md:mt-[-20px]  flex gap-[240px] md:gap-[120px]  ">
           <LeftNav />
-          <div className={`flex gap-4 sm:gap-4 flex-wrap sm:ml-[0px] mt-7 ${!toogle ? "" : "hidden"}  `}>
+          <div className={`flex gap-4 md:w-screen flex-wrap md:ml-[-40px]  mt-7 ${!toogle ? "" : "hidden"}  `}>
             <ServiceCard/>
           </div>
+
+
+          <div className={`mt-8 md:ml-0  ml-[-300px] ${!toogle ? "hidden" : ""}`}>
+            <LawyerForm />
+           </div>
         </div>
       </section>
     </>

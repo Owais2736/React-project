@@ -15,10 +15,10 @@ function Department() {
   return (
     <>
        <section className='top'>
-        <div className='flex justify-between items-center text-center mt-8 sm:mt-3'>
-          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
+        <div className='flex justify-between items-center text-center mt-8 md:mt-3'>
+          <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]   ${!toogle ? "" : "hidden"}`}>26 Lawyers</div>
           <div className={` mt-4`}>
-            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 sm:w-[160px] w-[150px] sm:ml-[21vw]  `}>Create Departments</div>
+            <div className={`font-bold text-[14px] ${!toogle ? "hidden" : ""} ml-4 md:w-[160px] w-[150px] md:ml-[21vw]  `}>Create Departments</div>
           </div>
           <div className={`  ${!toogle ? "" : "mr-[800px]"}   ${!toogle ? "" : "mr-[60vw] mt-2"}  cursor-pointer  `}>
             <Button1 onClick={handleBtn} title={toogle ? "Cancel" : "Add New"} background="bg-blue-200" width="w-[120px]" height="h-10" round="rounded-3xl" text="text-[12px]" color="text-[blue]" svg={
@@ -35,13 +35,13 @@ function Department() {
       <section className='main'>
         <div className="w-full mt-[-20px] flex gap-[240px] ">
           <LeftNav />
-          <div className={`flex flex-col sm:flex-row p-7 gap-4 flex-wrap w-full sm:w-[78%] rounded-xl mt-7 ml-[-315px] sm:ml-[-230px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
-            <div className={`flex flex-col sm:flex-row justify-start ml-[-14px]  gap-3 flex-wrap  mt-[-5px]  `}>
+          <div className={`flex flex-col md:flex-row p-7 gap-4 flex-wrap w-full md:w-[78%] rounded-xl mt-7 ml-[-315px] md:ml-[-230px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
+            <div className={`flex flex-col md:flex-row justify-start ml-[-14px]  gap-3 flex-wrap  mt-[-5px]  `}>
               <DepartmentCard />
             </div>
           </div>
           
-          <div className={`mt-10 sm:ml-0  ml-[-300px] ${!toogle ? "hidden" : ""}`}>
+          <div className={`mt-10 md:ml-0  ml-[-300px] ${!toogle ? "hidden" : ""}`}>
             <DepartmentForm />
            </div> 
 

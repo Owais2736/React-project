@@ -12,7 +12,7 @@ function Navbar2({ buttonTitle, title1 }) {
         <>
             <div className='flex justify-between'>
 
-                <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>{title1}</div>
+                <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>{title1}</div>
 
                 <div className={` mt-4`}>
 

@@ -9,7 +9,7 @@ import LeftNav from '../../components/LeftNav.jsx';
 
 function Reviews() {
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [imdodalOpen, setImdodalOpen] = useState(false);
   const [isSecModalOpen, setIsSecModalOpen] = useState(false);
   const [toogle, setToogle] = useState(false)
 
@@ -18,18 +18,18 @@ function Reviews() {
   }
 
   const showModal = () => {
-    setIsModalOpen(true);
+    setImdodalOpen(true);
   };
   const handleOk = () => {
     setIsSecModalOpen(true);
   };
   const handleCancel = () => {
-    setIsModalOpen(false);
+    setImdodalOpen(false);
   };
 
   const handleSecOk = () => {
     setIsSecModalOpen(false);
-    setIsModalOpen(false);
+    setImdodalOpen(false);
   };
   const handleSecCancel = () => {
     setIsSecModalOpen(false);
@@ -52,13 +52,13 @@ function Reviews() {
   return (
     <>
       <section className='top'>
-        <div className='flex justify-between mt-8 gap-3 sm:mt-3'>
+        <div className='flex justify-between mt-8 gap-3 md:mt-3'>
 
-          <div className={`font-bold text-[14px] ml-4 sm:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
+          <div className={`font-bold text-[14px] ml-4 md:ml-[21vw]  mt-4 ${!toogle ? "" : "hidden"}`}>Reviews</div>
 
           <div className={` mt-4`}>
 
-            <div className={`font-bold w-[100px] text-[14px] ${!toogle ? "hidden" : ""} sm:ml-[21vw] ml-3  `}>Create Reviews</div>
+            <div className={`font-bold w-[100px] text-[14px] ${!toogle ? "hidden" : ""} md:ml-[21vw] ml-3  `}>Create Reviews</div>
 
           </div>
 
@@ -101,15 +101,15 @@ function Reviews() {
 
           <LeftNav/>
 
-          <div className={`flex p-7 gap-4 flex-wrap w-full sm:w-[78%] rounded-xl mt-7  ml-[-340px] sm:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
+          <div className={`flex p-7 gap-4 flex-wrap w-full md:w-[78%] rounded-xl mt-7  ml-[-340px] md:ml-[-250px] bg-gray-100  ${!toogle ? "" : "hidden"} `}>
             {reviews.map(review => {
               return (
-                <div className='w-80 sm:w-[23vw] p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
+                <div className='w-80 md:w-[23vw] p-3 bg-[white]  border-2 rounded-[30px] flex flex-col gap-3 h-[250px]'>
                   <div onClick={showModal} className='ml-auto mt-1 bg-gray-100 rounded-md h-6 w-7 cursor-pointer'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="26" height="24" color="#000000" fill="none">
                     <path d="M18 6L12 12M12 12L6 18M12 12L18 18M12 12L6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></div>
 
-                  <Modal className='' open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+                  <Modal className='' open={imdodalOpen} onOk={handleOk} onCancel={handleCancel}>
                     <center>
                       <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20%" height="20%" color="red" fill="none">
                         <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
@@ -154,10 +154,10 @@ function Reviews() {
             }
           </div>
 
-          <div className={`sm:w-[79%]  w-full ml-[-340px] sm:ml-[-260px] mt-7 flex gap-4 rounded-xl bg-gray-200 p-11  ${!toogle ? "hidden" : ""} `}>
+          <div className={`md:w-[79%]  w-full ml-[-340px] md:ml-[-260px] mt-7 flex gap-4 rounded-xl bg-gray-200 p-11  ${!toogle ? "hidden" : ""} `}>
             <div className='w-24 cursor-pointer border-2 h-20 rounded-xl'>
               <img className='rounded-xl' src="src/images/Reviews/profile.jpg" alt="" srcset="" />
-              <input className='w-24 rounded-lg' type="file" />
+              <input className='w-24 rounded-md' type="file" />
             </div>
 
             <div className='w-[70%]'>
